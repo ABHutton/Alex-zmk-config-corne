@@ -9,6 +9,47 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
+    macros {
+	// Macro: Control + Shift + X
+        CSCU: CSCU {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <
+                &macro_press &kp LCTRL
+                &macro_press &kp LSFT
+                &macro_tap &kp X
+                &macro_release &kp LSFT
+                &macro_release &kp LCTRL
+            >;
+        };
+	// Macro: Control + Shift + C
+        CSCO: CSCO {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <
+                &macro_press &kp LCTRL
+                &macro_press &kp LSFT
+                &macro_tap &kp C
+                &macro_release &kp LSFT
+                &macro_release &kp LCTRL
+            >;
+        };
+	// Macro: Control + Shift + V
+        CSP: CSP {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <
+                &macro_press &kp LCTRL
+                &macro_press &kp LSFT
+                &macro_tap &kp V
+                &macro_release &kp LSFT
+                &macro_release &kp LCTRL
+            >;
+        };
+    };
+};
+
+/ {
         keymap {
                 compatible = "zmk,keymap";
 
