@@ -88,8 +88,7 @@
 // | CTRL | BRNXT | CSCU  | CSCO | CSP | VOL_DWM |   | SCRL_DWN | HOME |  ,   |  .   |  /  | ALT  |
 //                        | GUI  | SPC |         |   |          | ENT  | SHFT |                        
                         bindings = <
-   // &kp ESC   &bt BT_CLR &kp C_PP  &kp C_MUTE &kp END        &kp C_VOL_UP &msc SCRL_UP   &kp LBRC &kp RBRC  &kp LBKT  &kp BRKT &kp BSPC
-   &kp TAB   &kp PLUS   &kp MINUS &kp TILDE  &kp UNDERSCORE &kp DELETE   &kp LEFT       &kp DOWN &kp UP    &kp RIGHT &kp SEMI &kp SQT
+   &kp ESC   &bt BT_CLR &kp C_PP  &kp C_MUTE &kp END        &kp C_VOL_UP &msc SCRL_UP   &kp LBRC &kp RBRC  &kp LBKT  &kp BRKT &kp BSPC
    &kp TAB   &kp PLUS   &kp MINUS &kp TILDE  &kp UNDERSCORE &kp DELETE   &kp LEFT       &kp DOWN &kp UP    &kp RIGHT &kp SEMI &kp SQT
    &kp TAB   &kp PLUS   &kp MINUS &kp TILDE  &kp UNDERSCORE &kp DELETE   &kp LEFT       &kp DOWN &kp UP    &kp RIGHT &kp SEMI &kp SQT
    // &kp LCTRL &bt BT_NXT &CSCU     &CSCO      &CSP           &kp C_VOL_DN &msc SCRL_DOWN &kp HOME &kp COMMA &kp DOT   &kp FSLH &kp RALT
