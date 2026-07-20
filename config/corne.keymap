@@ -10,27 +10,13 @@
 
 / {
     macros {
-	// Macro: Control + Shift + X
-        CSCU: CSCU {
+	// Macro: Control + b
+        CB: CB {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <
                 &macro_press &kp LCTRL
-                &macro_press &kp LSFT
-                &macro_tap &kp X
-                &macro_release &kp LSFT
-                &macro_release &kp LCTRL
-            >;
-        };
-	// Macro: Control + Shift + C
-        CSCO: CSCO {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <
-                &macro_press &kp LCTRL
-                &macro_press &kp LSFT
-                &macro_tap &kp C
-                &macro_release &kp LSFT
+                &macro_tap &kp B
                 &macro_release &kp LCTRL
             >;
         };
@@ -84,12 +70,12 @@
 // -----------------------------------------------------------------------------------------
 // | ESC  | BTCLR | PAUSE | MUTE | END | VOL_UP  |   |  PAGE_UP  |   {  |  }   |  [   |  ]  | BSPC |
 // | TAB  |   +   |   -   |  ~   |  _  | DEL     |   |    LFT    | DWN  |  UP  |  RGT |  ;  |  '   |
-// | CTRL | BRNXT | CSCU  | CSCO | CSP | VOL_DWM |   | PAGE_DOWN | HOME |  ,   |  .   |  /  | ALT  |
+// | CTRL | BRNXT |  CB   | CSCO | CSP | VOL_DWM |   | PAGE_DOWN | HOME |  ,   |  .   |  /  | ALT  |
 //                        | GUI  | SPC |         |   |           | ENT  | SHFT |                        
                         bindings = <
    &kp ESC   &bt BT_CLR &kp C_PP  &kp C_MUTE &kp END        &kp C_VOL_UP &kp PAGE_UP   &kp LBRC &kp RBRC  &kp LBKT  &kp RBKT &kp BSPC
    &kp TAB   &kp PLUS   &kp MINUS &kp TILDE  &kp UNDERSCORE &kp DELETE   &kp LEFT      &kp DOWN &kp UP    &kp RIGHT &kp SEMI &kp SQT
-   &kp LCTRL &bt BT_NXT &CSCU     &CSCO      &CSP           &kp C_VOL_DN &kp PAGE_DOWN &kp HOME &kp COMMA &kp DOT   &kp FSLH &kp RALT
+   &kp LCTRL &bt BT_NXT &CB       &kp PIPE   &CSP           &kp C_VOL_DN &kp PAGE_DOWN &kp HOME &kp COMMA &kp DOT   &kp FSLH &kp RALT
                                   &kp LGUI   &kp SPACE      &trans       &trans        &kp RET  &kp RSHFT
                         >;
                 };
